@@ -6,10 +6,9 @@
     <title>Randy Wendel Mojica Flores - CV</title>
     <style>
 
-      /* --- General text --- */
       body {
-        font-family: Verdana, Arial, Helvetica, sans-serif;
-        color: #222222;
+        font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #1b2a35;
         line-height: 1.5;
         font-kerning: normal;
         counter-reset: section-counter;
@@ -31,10 +30,9 @@
         widows: 3;
         tab-size: 4;
       }
-
-      /* --- Headings --- */
+      
       h1, h2, h3, h4, h5, h6 {
-        font-family: Georgia, "Times New Roman", serif;
+        font-family: "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
         color: #1a3e5c;
       }
 
@@ -43,19 +41,19 @@
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;
-        letter-spacing: 0.06em;
-        text-shadow: 1px 1px 2px #bbbbbb;
+        letter-spacing: 0.05em;
+        text-shadow: 1px 1px 2px rgba(26, 62, 92, 0.25);
       }
 
       .section-title {
-        font-size: 1.3rem;
+        font-size: 1.35rem;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 0.08em;
         word-spacing: 2px;
         color: #0d5c63;
         text-decoration: underline;
-        text-decoration-style: double;
+        text-decoration-style: solid;
         text-decoration-color: #0d5c63;
         counter-increment: section-counter;
       }
@@ -67,36 +65,35 @@
       }
 
       h3 {
-        font-size: 1.1em;
+        font-size: 1.15em;
         font-weight: bold;
         font-style: italic;
-        color: #333366;
+        color: #1a3e5c;
       }
 
       h4 {
         font-size: 1em;
         font-variant: small-caps;
-        letter-spacing: 0.03em;
-        color: #555555;
+        letter-spacing: 0.04em;
+        color: rgba(26, 62, 92, 0.75);
       }
 
       h5 {
-        font-size: 0.95em;
+        font-size: 0.9em;
         font-weight: bold;
         text-decoration: underline;
-        color: #444444;
+        color: rgba(26, 62, 92, 0.9);
       }
 
       h6 {
-        font-size: 0.85em;
+        font-size: 0.8em;
         font-style: italic;
-        color: #777777;
+        color: rgba(26, 62, 92, 0.55);
       }
-
-      /* --- Paragraph right after a section heading (intro lines) --- */
+      
       h2 + p {
         font-style: italic;
-        color: #555555;
+        color: rgba(26, 62, 92, 0.6);
         text-indent: 2ch;
       }
 
@@ -104,14 +101,12 @@
         letter-spacing: 0.01em;
       }
 
-      /* --- Personal-details block right after the title --- */
       h1 ~ address {
         letter-spacing: 0.02em;
       }
 
-      /* --- About Me lead paragraph --- */
       .lead {
-        font-size: 1.05em;
+        font-size: 1.1em;
         line-height: 1.6;
       }
 
@@ -126,21 +121,18 @@
         letter-spacing: 0.03em;
       }
 
-      /* --- Work experience meta info --- */
       .job-meta {
         font-style: italic;
-        font-size: 0.95em;
-        color: #666666;
+        font-size: 0.9em;
+        color: rgba(26, 62, 92, 0.7);
       }
 
-      /* --- Contact block --- */
       address {
         font-style: normal;
         line-height: 1.6;
         word-break: break-all;
       }
 
-      /* --- Links --- */
       a {
         text-decoration: none;
         font-weight: bold;
@@ -152,25 +144,26 @@
       }
 
       a:visited {
-        color: #6a3d9a;
+        color: #8a99a3;
       }
 
       a:hover {
         text-decoration: underline;
-        color: #d35400;
+        color: #b5651d;
       }
 
       a:focus {
         text-decoration: underline;
-        color: #d35400;
+        color: #b5651d;
       }
 
       a:active {
-        color: #b34700;
+        color: #8a4d15;
       }
 
       a[href*="doi.org"] {
-        color: #8e44ad;
+        color: #073d42;
+        font-style: italic;
       }
 
       a[href^="mailto:"] {
@@ -184,14 +177,14 @@
       a[href^="http"]::after {
         content: " \2197";
         font-size: 0.8em;
-        color: #d35400;
+        color: #b5651d;
       }
 
-      /* --- Inline text elements --- */
       abbr {
         font-variant: small-caps;
         text-decoration-line: underline;
         text-decoration-style: dotted;
+        color: rgba(26, 62, 92, 0.85);
       }
 
       b, strong {
@@ -204,13 +197,13 @@
 
       em {
         text-emphasis-style: dot;
-        text-emphasis-color: #d35400;
+        text-emphasis-color: #b5651d;
       }
 
       time {
         font-weight: bold;
         white-space: nowrap;
-        color: #333333;
+        color: #1a3e5c;
         font-variant-numeric: lining-nums;
       }
 
@@ -218,13 +211,12 @@
         vertical-align: middle;
       }
 
-      /* --- Lists --- */
       ul, ol {
         line-height: 1.6;
       }
 
       ul li {
-        list-style-type: square;
+        list-style-type: circle;
       }
 
       ol li {
@@ -238,10 +230,9 @@
 
       ol li:last-of-type {
         font-style: italic;
-        color: #666666;
+        color: rgba(26, 62, 92, 0.65);
       }
 
-      /* --- Description lists --- */
       dl > dt {
         font-weight: bold;
         color: #1a3e5c;
@@ -249,14 +240,13 @@
       }
 
       dl > dd {
-        color: #333333;
+        color: rgba(26, 62, 92, 0.75);
         line-height: 1.5;
         text-indent: 1.2em;
       }
 
-      /* --- Table --- */
       table {
-        font-size: 95%;
+        font-size: 90%;
       }
 
       caption {
@@ -277,17 +267,17 @@
 
       td {
         text-align: center;
-        color: #333333;
+        color: rgba(26, 62, 92, 0.8);
       }
 
       tbody tr:nth-child(even) {
-        background-color: #f2f2f2;
+        background-color: #eef3f4;
       }
 
       tfoot td {
         font-style: italic;
-        font-size: 0.85em;
-        color: #666666;
+        font-size: 0.8em;
+        color: rgba(26, 62, 92, 0.6);
         text-align: left;
       }
 
@@ -306,10 +296,10 @@
 </p>
 
 <address>
-  Phone (Mobile / WhatsApp): <a href="tel:+330652609601">(+33) 06 52 60 96 01</a> / <a href="tel:+50762552502">(+507) 6255 2502</a><br>
+  Phone (Mobile): <a href="tel:+330652609601">(+33) 06 52 60 96 01</a><br>
   Email: <a href="mailto:randy.mojica-flores@etu.unistra.fr">randy.mojica-flores@etu.unistra.fr</a><br>
   Alternative Email: <a href="mailto:randy.mojicaflores@studenti.unimi.it">randy.mojicaflores@studenti.unimi.it</a><br>
-  Website: <a href="https://orcid.org/0000-0003-4514-3083">https://orcid.org/0000-0003-4514-3083</a> <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/250px-ORCID_iD.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail" alt="ORCID identifier icon" width="16" height="16">
+  Website: <a href="https://or.cid.org/0000-0003-4514-3083">https://orcid.org/0000-0003-4514-3083</a> <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/250px-ORCID_iD.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail" alt="ORCID identifier icon" width="16" height="16">
 </address>
 
 <hr>
