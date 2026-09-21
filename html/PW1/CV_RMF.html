@@ -4,10 +4,298 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Randy Wendel Mojica Flores - CV</title>
+    <style>
+
+      /* --- General text --- */
+      body {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        color: #222222;
+        line-height: 1.5;
+        font-kerning: normal;
+        counter-reset: section-counter;
+        direction: ltr;
+        unicode-bidi: normal;
+        quotes: "\201C" "\201D" "\2018" "\2019";
+        font-variant-ligatures: common-ligatures;
+        font-stretch: normal;
+        font-size-adjust: 0.5;
+      }
+
+      p {
+        text-align: justify;
+        hyphens: auto;
+        text-align-last: left;
+        text-justify: inter-word;
+        word-wrap: break-word;
+        orphans: 3;
+        widows: 3;
+        tab-size: 4;
+      }
+
+      /* --- Headings --- */
+      h1, h2, h3, h4, h5, h6 {
+        font-family: Georgia, "Times New Roman", serif;
+        color: #1a3e5c;
+      }
+
+      #cv-title {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        text-shadow: 1px 1px 2px #bbbbbb;
+      }
+
+      .section-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        word-spacing: 2px;
+        color: #0d5c63;
+        text-decoration: underline;
+        text-decoration-style: double;
+        text-decoration-color: #0d5c63;
+        counter-increment: section-counter;
+      }
+
+      .section-title::before {
+        content: counter(section-counter) ". ";
+        font-style: normal;
+        font-weight: bold;
+      }
+
+      h3 {
+        font-size: 1.1em;
+        font-weight: bold;
+        font-style: italic;
+        color: #333366;
+      }
+
+      h4 {
+        font-size: 1em;
+        font-variant: small-caps;
+        letter-spacing: 0.03em;
+        color: #555555;
+      }
+
+      h5 {
+        font-size: 0.95em;
+        font-weight: bold;
+        text-decoration: underline;
+        color: #444444;
+      }
+
+      h6 {
+        font-size: 0.85em;
+        font-style: italic;
+        color: #777777;
+      }
+
+      /* --- Paragraph right after a section heading (intro lines) --- */
+      h2 + p {
+        font-style: italic;
+        color: #555555;
+        text-indent: 2ch;
+      }
+
+      :lang(en) em {
+        letter-spacing: 0.01em;
+      }
+
+      /* --- Personal-details block right after the title --- */
+      h1 ~ address {
+        letter-spacing: 0.02em;
+      }
+
+      /* --- About Me lead paragraph --- */
+      .lead {
+        font-size: 1.05em;
+        line-height: 1.6;
+      }
+
+      .lead::first-letter {
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #0d5c63;
+      }
+
+      .lead::first-line {
+        font-variant: small-caps;
+        letter-spacing: 0.03em;
+      }
+
+      /* --- Work experience meta info --- */
+      .job-meta {
+        font-style: italic;
+        font-size: 0.95em;
+        color: #666666;
+      }
+
+      /* --- Contact block --- */
+      address {
+        font-style: normal;
+        line-height: 1.6;
+        word-break: break-all;
+      }
+
+      /* --- Links --- */
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        overflow-wrap: break-word;
+      }
+
+      a:link {
+        color: #0d5c63;
+      }
+
+      a:visited {
+        color: #6a3d9a;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: #d35400;
+      }
+
+      a:focus {
+        text-decoration: underline;
+        color: #d35400;
+      }
+
+      a:active {
+        color: #b34700;
+      }
+
+      a[href*="doi.org"] {
+        color: #8e44ad;
+      }
+
+      a[href^="mailto:"] {
+        font-style: italic;
+      }
+
+      a[href^="tel:"] {
+        font-weight: normal;
+      }
+
+      a[href^="http"]::after {
+        content: " \2197";
+        font-size: 0.8em;
+        color: #d35400;
+      }
+
+      /* --- Inline text elements --- */
+      abbr {
+        font-variant: small-caps;
+        text-decoration-line: underline;
+        text-decoration-style: dotted;
+      }
+
+      b, strong {
+        font-weight: bold;
+      }
+
+      i, em {
+        font-style: italic;
+      }
+
+      em {
+        text-emphasis-style: dot;
+        text-emphasis-color: #d35400;
+      }
+
+      time {
+        font-weight: bold;
+        white-space: nowrap;
+        color: #333333;
+        font-variant-numeric: lining-nums;
+      }
+
+      img[alt] {
+        vertical-align: middle;
+      }
+
+      /* --- Lists --- */
+      ul, ol {
+        line-height: 1.6;
+      }
+
+      ul li {
+        list-style-type: square;
+      }
+
+      ol li {
+        list-style-type: decimal;
+      }
+
+      ol li:first-of-type {
+        color: #0d5c63;
+        font-weight: bold;
+      }
+
+      ol li:last-of-type {
+        font-style: italic;
+        color: #666666;
+      }
+
+      /* --- Description lists --- */
+      dl > dt {
+        font-weight: bold;
+        color: #1a3e5c;
+        font-variant-caps: all-small-caps;
+      }
+
+      dl > dd {
+        color: #333333;
+        line-height: 1.5;
+        text-indent: 1.2em;
+      }
+
+      /* --- Table --- */
+      table {
+        font-size: 95%;
+      }
+
+      caption {
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+        color: #1a3e5c;
+      }
+
+      th {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #ffffff;
+        background-color: #1a3e5c;
+      }
+
+      td {
+        text-align: center;
+        color: #333333;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      tfoot td {
+        font-style: italic;
+        font-size: 0.85em;
+        color: #666666;
+        text-align: left;
+      }
+
+    </style>
 </head>
 <body>
 
-<h1>Curriculum Vitae: Randy Wendel Mojica Flores</h1>
+<h1 id="cv-title">Curriculum Vitae: Randy Wendel Mojica Flores</h1>
 
 <p>
   <b>Date of birth:</b> <time datetime="1996-06-25">25/06/1996</time> <br>
@@ -26,8 +314,8 @@
 
 <hr>
 
-<h2>About Me</h2>
-<p>
+<h2 class="section-title">About Me</h2>
+<p class="lead">
   I am a M.Sc. student coursing the second year of the <strong><abbr title="Erasmus Mundus Joint Master">EMJM</abbr> ChEMoinformatics+</strong>
   programme, having completed my Bachelor in Chemistry, and carrying more than six years of professional experience, with a robust background in
   organic and computational chemistry. I am honored to have been awarded an excellence scholarship fully funded by the National Secretariat for
@@ -43,10 +331,10 @@
 
 <hr>
 
-<h2>Work Experience</h2>
+<h2 class="section-title">Work Experience</h2>
 
 <h3>Research Technician for Nutraceutical Bank</h3>
-<p>
+<p class="job-meta">
   <abbr title="Institute of Scientific Research and High Technology Services of Panama">INDICASAT AIP</abbr>, Panama, Panama<br>
   <time datetime="2021-03-01">01/03/2021</time> - <time datetime="2025-08-31">31/08/2025</time>
 </p>
@@ -73,7 +361,7 @@
 </p>
 
 <h3>Research Assistant</h3>
-<p>
+<p class="job-meta">
   <abbr title="Institute of Scientific Research and High Technology Services of Panama">INDICASAT AIP</abbr>, Panama, Panama<br>
   <time datetime="2020-03-05">05/03/2020</time> - <time datetime="2021-02-28">28/02/2021</time>
 </p>
@@ -93,7 +381,7 @@
 
 <hr>
 
-<h2>Education and Training</h2>
+<h2 class="section-title">Education and Training</h2>
 
 <dl>
   <dt><time datetime="2025-09-01">01/09/2025</time> - CURRENT, Strasbourg, France</dt>
@@ -131,7 +419,7 @@
 
 <hr>
 
-<h2>Language Skills</h2>
+<h2 class="section-title">Language Skills</h2>
 <p>Mother tongue: Spanish</p>
 
 <h3>Proficiency Table</h3>
@@ -213,7 +501,7 @@
 
 <hr>
 
-<h2>Digital Skills</h2>
+<h2 class="section-title">Digital Skills</h2>
 <dl>
   <dt>Cheminformatics</dt>
   <dd>RDKit, OpenBabel</dd>
@@ -245,7 +533,7 @@
 
 <hr>
 
-<h2>Publications</h2>
+<h2 class="section-title">Publications</h2>
 <ol>
   <li>
     <time datetime="2024">2024</time> - Boya P., C.A., Rodriguez, C., <b>Mojica-Flores, R.</b>, Urrutia, J.C., Cantilo-Diaz, V., Barrios-Jaen, M., Ng, M.G., Pineda, L., Llanes, A., Spadafora, C., Mejia, L.C., &amp; Gutierrez, M. Antiprotozoal Natural Products from Endophytic Fungi Associated with Cacao and Coffee. <b><i>Metabolites</i></b>, 14(11), 575. DOI: <a href="https://doi.org/10.3390/metabo14110575">10.3390/metabo14110575</a>
@@ -269,7 +557,7 @@
 
 <hr>
 
-<h2>Conferences and Seminars</h2>
+<h2 class="section-title">Conferences and Seminars</h2>
 <ol>
   <li><time datetime="2024-10">10/2024</time>, Sortis Hotel, Panama City, Panama - <b>Bioprospecting of Endophytic Fungi from Panamanian Coffee: Bioactive Potential and Human Health Applications of Strains GEF-7-34.1 and GEF7-28.14.</b> XXXVI Latin American Chemistry Congress Panama 2024 (CLAQ 2024).</li>
   <li><time datetime="2023-10">10/2023</time>, Instituto David High School, David City, Panama - <b>My journey in science: from Pedregal Port to Panama City.</b> Invited Presentation, conference for science week.</li>
@@ -291,7 +579,7 @@
 
 <hr>
 
-<h2>Honours and Awards</h2>
+<h2 class="section-title">Honours and Awards</h2>
 <dl>
   <dt><time datetime="2025-04-25">25/04/2025</time> - EMJM Chemoinformatics+ double degree master's program acceptance: University of Milan - University of Strasbourg track</dt>
   <dd>Acceptance into the EMJM Chemoinformatics+ double degree master's program for the physical chemistry - chemoinformatics track between the University of Milan and the University of Strasbourg. <a href="https://masterchemoinfo.u-strasbg.fr/">Programme website</a></dd>
@@ -344,7 +632,7 @@
 
 <hr>
 
-<h2>Teaching Experience</h2>
+<h2 class="section-title">Teaching Experience</h2>
 <dl>
   <dt><time datetime="2019">2019</time> - <time datetime="2025">2025</time> - <b>Laboratory Instructor</b></dt>
   <dd>Trained undergraduate students in organic synthesis and natural products laboratory techniques, teaching advanced instrumentation operation and experimental procedures, including <abbr title="Nuclear Magnetic Resonance">NMR</abbr>, <abbr title="Infrared">IR</abbr>, and <abbr title="Liquid Chromatography - Mass Spectrometry in tandem">LC-MS/MS</abbr> data analysis.</dd>
@@ -358,7 +646,7 @@
 
 <hr>
 
-<h2>Service and Outreach</h2>
+<h2 class="section-title">Service and Outreach</h2>
 <dl>
   <dt><time datetime="2022-09">09/2022</time> - <b>Peer Reviewer for <abbr title="International Conference on Engineering, Sciences and Technology">IESTEC</abbr> Congress</b></dt>
   <dd>Peer review during selection of conference papers for the VIII International Conference on Engineering, Sciences, and Technology (IESTEC).</dd>
@@ -372,7 +660,7 @@
 
 <hr>
 
-<h2>Collaborations</h2>
+<h2 class="section-title">Collaborations</h2>
 <p><time datetime="2020-03">03/2020</time> - CURRENT - Principal Collaborators in Scientific Publications</p>
 <ul>
   <li>Jorge Ali Torres (National University of Colombia)</li>
